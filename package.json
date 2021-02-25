@@ -1,0 +1,16 @@
+{
+  "name": "triplette-markov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run watch",
+    "watch": "budo --host localhost --dir . --open --live --watch-glob '**/*.{html,css,js}'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "budo": "^11.6.4"
+  }
+}

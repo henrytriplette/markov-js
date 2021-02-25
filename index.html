@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rita Markov</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
+  </head>
+
+<body>
+
+  <section class="uk-section uk-section-small uk-section-default uk-padding-remove-bottom">
+    <div class="uk-container uk-container-expand uk-margin-large-bottom">
+
+      <form class="uk-form-horizontal uk-grid-small" uk-grid>
+
+        <div class="uk-width-1-1">
+            <label class="uk-form-label" for="textarea-output">Output</label>
+            <div class="uk-form-controls">
+                <textarea class="uk-textarea textarea" id="textarea-output" rows="5" placeholder="Result?"></textarea>
+            </div>
+        </div>
+
+        <div class="uk-width-1-2">
+            <label class="uk-form-label" for="author_1">Author 1</label>
+            <div class="uk-form-controls">
+                <select class="uk-select" id="author_1">
+                  <option value="aretino">Aretino [ITA]</option>
+                  <option value="erotic_horror">Erotic horror [ITA]</option>
+                  <option value="arthur_rimbaud">Arthur Rimbaud [ITA]</option>
+                  <option value="giacomo_leopardi">Giacomo Leopardi [ITA]</option>
+                  <option value="paul_verlaine">Paul Verlaine [ITA]</option>
+                  <option value="baudelaire">Baudelaire [ITA]</option>
+                  <option value="poe_poesie">Edgar Allan Poe Poesie [ITA]</option>
+                  <option value="edgar_allan_poe">Edgar Allan Poe [ITA]</option>
+                  <option value="sergio_corazzini">Sergio Corazzini [ITA]</option>
+                  <option value="lovecraft">Lovecraft [ITA]</option>
+                  <option value="songs">Songs [ENG]</option>
+                  <option value="verlaine">Verlaine [ENG]</option>
+                  <option value="john_keats">John Keats [ENG]</option>
+                  <option value="plato">Plato [ENG]</option>
+                  <option value="washington_irving">Washington Irving [ENG]</option>
+                  <option value="bruce_sterling">Bruce Sterling [ENG]</option>
+                  <option value="john_milton">John Milton [ENG]</option>
+                  <option value="wittgenstein">Wittgenstein [ENG]</option>
+                  <option value="kafka">Kafka [ENG]</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="uk-width-1-2">
+          <label class="uk-form-label" for="author_2">Author 2</label>
+          <div class="uk-form-controls">
+              <select class="uk-select" id="author_2">
+                <option value="aretino">Aretino [ITA]</option>
+                <option value="erotic_horror">Erotic horror [ITA]</option>
+                <option value="arthur_rimbaud">Arthur Rimbaud [ITA]</option>
+                <option value="giacomo_leopardi">Giacomo Leopardi [ITA]</option>
+                <option value="paul_verlaine">Paul Verlaine [ITA]</option>
+                <option value="baudelaire">Baudelaire [ITA]</option>
+                <option value="poe_poesie">Edgar Allan Poe Poesie [ITA]</option>
+                <option value="edgar_allan_poe">Edgar Allan Poe [ITA]</option>
+                <option value="sergio_corazzini">Sergio Corazzini [ITA]</option>
+                <option value="lovecraft">Lovecraft [ITA]</option>
+                <option value="songs">Songs [ENG]</option>
+                <option value="verlaine">Verlaine [ENG]</option>
+                <option value="john_keats">John Keats [ENG]</option>
+                <option value="plato">Plato [ENG]</option>
+                <option value="washington_irving">Washington Irving [ENG]</option>
+                <option value="bruce_sterling">Bruce Sterling [ENG]</option>
+                <option value="john_milton">John Milton [ENG]</option>
+                <option value="wittgenstein">Wittgenstein [ENG]</option>
+                <option value="kafka">Kafka [ENG]</option>
+              </select>
+          </div>
+        </div>
+
+        <div class="uk-width-1-2">
+          <label class="uk-form-label" for="n_factor">n-factor</label>
+          <div class="uk-form-controls">
+            <input class="uk-range" id="n_factor" type="range" value="4" min="1" max="10" step="1">
+          </div>
+        </div>
+
+        <div class="uk-width-1-2">
+          <label class="uk-form-label" for="sentences">sentences</label>
+          <div class="uk-form-controls">
+            <input class="uk-range" id="sentences" type="range" value="5" min="1" max="20" step="1">
+          </div>
+        </div>
+
+      </form>
+
+      <a href="#" class="generate uk-button uk-button-secondary">Generate</a>
+    </div>
+  </section>
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  <!-- Rita -->
+  <script src="https://unpkg.com/rita"></script>
+
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
